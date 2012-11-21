@@ -1,0 +1,35 @@
+h1 { font-size: 24px; line-height: 28px; }
+h2 { font-size: 20px; line-height: 28px; }
+h3 { font-size: 15px; line-height: 40px; }
+h4 { font-size: 15px; line-height: 20px; }
+h5 { font-size: 14px; line-height: 20px; }
+h6 { font-size: 13px; line-height: 20px; }
+
+h1,h2,h3,h4,h5,h6
+{
+  font-weight: normal;
+}
+
+address
+{
+  line-height: @baseLineHeight + 1px;
+  margin-bottom: @baseLineHeight + 1px;
+}
+
+blockquote
+{
+  p
+  {
+  #font > .shorthand(14px,300,@baseLineHeight+1px);  
+  }
+}
+
+ul,dl
+{
+  line-height: @baseFontSize;
+}
+
+ol,dt,dd
+{
+  line-height: @baseLineHeight + 1px;
+}

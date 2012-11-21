@@ -1,0 +1,28 @@
+.carousel-control
+{
+  background: transparent;
+  border: 0px solid transparent;
+  .border-radius(0px);
+  font-size: 65px;
+  height:45px;
+  line-height: @baseLineHeight + 1px;
+  left: 20px;
+  width: 27px;
+  font-weight: normal;
+  top: 50%;
+  display: none;
+}
+
+.carousel
+{
+  background: #000;
+  &:hover
+  {
+    .carousel-control
+    {
+     display: inline;
+    }  
+  }
+}
+
+

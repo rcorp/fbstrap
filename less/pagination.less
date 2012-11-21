@@ -1,0 +1,38 @@
+.pagination
+{
+  height: (@baseLineHeight*2)+2px;
+  line-height: @baseLineHeight+1px;
+  margin: @baseLineHeight+1px  0;
+  
+}
+
+.pagination ul
+{
+  font-size: @baseFontSize;
+  height: (@baseLineHeight*2);
+  line-height: @baseFontSize;
+  
+}
+
+.pagination > ul > li
+{
+  color: @warningText+3;
+}
+
+.pagination a
+{
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.pagination ul > li > a:hover,
+.pagination ul > .active > a,
+.pagination ul > .active > span 
+{
+  background: #ECEFF6;
+}
+
+.pagination ul > .active > a,
+.pagination ul > .active > span
+{
+  color:#3B5998;
+}

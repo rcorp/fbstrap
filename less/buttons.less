@@ -1,0 +1,54 @@
+/* Buttons by Himanshi */
+
+
+.btn
+{
+  .border-radius(0px);
+  border-bottom: 1px solid #888;
+  font-weight: bold;
+  
+  &:hover
+  {
+    background: @btnBackgroundHighlight;
+    *background-color: @btnBackgroundHighlight; /* Buttons in IE7 don't get borders, so darken on hover */
+  }
+  
+  &:active
+  {
+    background-color: #E6E6E6;
+  }
+}
+
+.btn-primary
+{
+  border: 1px solid #29447E;
+  border-bottom: 1px solid #1A356E;
+  
+  &:hover
+  {
+    background: @btnPrimaryBackgroundHighlight;
+  }
+  
+}
+/*
+.btn-small
+{
+  .buttonBackground(@btnBackground, @btnBackgroundHighlight, @white, 0 0px 0px rgba(255,255,255,255));
+  .gradientBar(@btnBackground,@btnBackgroundHighlight, @white, 0 0px 0px rgba(255,255,255,25));
+  font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+  font-weight: bold;
+  border: 1px solid #29447E;
+  border-bottom: 1px solid #1A356E;
+}
+
+.btn-mini
+{
+   background: #DBDBDB;
+  .buttonBackground(#F5F4F5,#DBDBDB, @black, 0 0px 0px rgba(255,255,255,255));
+  .gradientBar(#F5F4F5,#DBDBDB, @black, 0 0px 0px rgba(255,255,255,255));
+  font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+  font-weight: bold;
+  
+  
+}
+*/
