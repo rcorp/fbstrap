@@ -44,13 +44,13 @@
 
 // Typography
 // -------------------------
-@sansFontFamily:        "lucida grande", tahoma, verdana, arial, sans-serif; //"Helvetica Neue", Helvetica, Arial, sans-serif;
+@sansFontFamily:        "lucida grande", Tahoma, verdana, arial, sans-serif; //"Helvetica Neue", Helvetica, Arial, sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          11px;
+@baseFontSize:          12px;
 @baseFontFamily:        @sansFontFamily;
-@baseLineHeight:        13px;
+@baseLineHeight:        14px;
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
@@ -60,9 +60,9 @@
 // Tables
 // -------------------------
 @tableBackground:                   transparent; // overall background-color
-@tableBackgroundAccent:             #f9f9f9; // for striping
-@tableBackgroundHover:              #f5f5f5; // for hover
-@tableBorder:                       #ddd; // table and cell border
+@tableBackgroundAccent:             #F2F2F2; // for striping #D8DFEA;
+@tableBackgroundHover:              #D8DFEA; //#f5f5f5; // for hover
+@tableBorder:                       #999; //#ddd; // table and cell border
 
 // Buttons
 // -------------------------
@@ -108,7 +108,7 @@
 @dropdownLinkColorHover:        @white;
 @dropdownLinkColorActive:       @dropdownLinkColor;
 
-@dropdownLinkBackgroundActive:  @linkColor;
+@dropdownLinkBackgroundActive:  #758EBB;
 @dropdownLinkBackgroundHover:   @dropdownLinkBackgroundActive;
 
 
@@ -209,16 +209,16 @@
 // Form states and alerts
 // -------------------------
 @warningText:             #333;      //#c09853;
-@warningBackground:       #FFEBE8;  //#fcf8e3;
-@warningBorder:           #DD3C10; //darken(spin(@warningBackground, -10), 3%);
+@warningBackground:       #EBEFF5;  //#fcf8e3;
+@warningBorder:           #DADFEB; //darken(spin(@warningBackground, -10), 3%);
 
-@errorText:               #b94a48;
-@errorBackground:         #f2dede;
-@errorBorder:             darken(spin(@errorBackground, -10), 3%);
+@errorText:               #333; //#b94a48;
+@errorBackground:         #FFEBE8; //#f2dede;
+@errorBorder:             #DD3C10; //darken(spin(@errorBackground, -10), 3%);
 
-@successText:             #468847;
-@successBackground:       #dff0d8;
-@successBorder:           darken(spin(@successBackground, -10), 5%);
+@successText:             #333; //#468847;
+@successBackground:       #FFF9D7; //#dff0d8;
+@successBorder:           #E2C822; //darken(spin(@successBackground, -10), 5%);
 
 @infoText:                #3a87ad;
 @infoBackground:          #d9edf7;
