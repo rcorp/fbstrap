@@ -1,0 +1,100 @@
+.table
+{
+  th
+  {
+    padding: 5px 0;
+  }
+}
+
+.table-striped
+{
+  border: 1px solid gray;
+  border-bottom: 1px solid #A6A6A6;
+  
+  th
+  {
+    .gradientBar(#F5F6F6, #DBDBDB, @black, 0 0 0 transparent);
+    border: solid 1px #999;
+    border-bottom-color: #888;
+    border-right: none;
+    line-height: normal;
+    padding: 5px;
+  }
+}
+
+.table-striped 
+{
+  tbody
+  {
+    tr:nth-child(odd) td,
+    tr:nth-child(even) th 
+    {
+      background-color: @white;
+    }
+    
+    tr:nth-child(even) td,
+    tr:nth-child(even) th 
+    {
+      background:@tableBackgroundAccent;
+    }
+ 
+    td:first-child
+    {
+     border-left:1px solid #999;
+    }
+    td
+    {
+     border-left: 1px solid #FBFBFB;
+    }
+   
+   tr:hover td,
+   tr:hover th 
+   {
+      background-color: @tableBackgroundHover;
+    }
+  }
+}
+
+.table-bordered
+{
+   td:first-child
+   {
+     border-left:1px solid #999;
+   }
+   td
+   {
+    border-left: 1px solid #FBFBFB;
+   }
+  .border-radius(0px);
+  
+  thead:first-child tr:first-child th:first-child,
+  tbody:first-child tr:first-child td:first-child 
+  {
+    .border-top-left-radius(0px);
+  }
+
+  thead:first-child tr:first-child th:last-child,
+  tbody:first-child tr:first-child td:last-child
+  {
+    .border-top-right-radius(0px);
+  } 
+
+  thead:last-child tr:last-child th:first-child,
+  tbody:last-child tr:last-child td:first-child,
+  tfoot:last-child tr:last-child td:first-child
+  {
+    .border-radius(0 0 0 0);
+    .border-bottom-left-radius(0px);    
+  }
+
+  thead:last-child tr:last-child th:last-child,
+  tbody:last-child tr:last-child td:last-child,
+  tfoot:last-child tr:last-child td:last-child
+  {
+    .border-bottom-right-radius(0px);
+  } 
+
+}
+
+
+
