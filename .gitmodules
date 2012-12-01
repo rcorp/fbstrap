@@ -1,0 +1,3 @@
+[submodule "rcorp-bootstrap"]
+	path = rcorp-bootstrap
+	url = git://github.com/rcorp/rcorp-bootstrap.git
