@@ -1,40 +1,87 @@
-@import "../bootstrap/less/bootstrap.less";
+/*!
+ * FBStrap v0.0.1
+ *
+ * Copyright 2012 Ramanan Corporation (RCorp)
+ * http://www.rcorp.co.in
+ * contactus@rcorp.co.in
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Special Thanks for Designing and building with all the love in the world @twitter by @mdo and @fat.
+ */
 
-@import "buttons.less";
+@import "fbvariables.less";
+@import "../rcorp-bootstrap/less/mixins.less";
+@import "../rcorp-bootstrap/less/reset.less";
 
-@import "navs.less";
 
-@import "navbar.less";
 
-@import "buttons.less";
 
-@import "button-groups.less";
+@import "../rcorp-bootstrap/less/scaffolding.less";
+@import "../rcorp-bootstrap/less/grid.less";
+@import "../rcorp-bootstrap/less/layouts.less";
 
-@import "modals.less";
-
+//Base CSS
+@import "../rcorp-bootstrap/less/type.less";
+@import "type.less";
+@import "../rcorp-bootstrap/less/code.less";
+@import "../rcorp-bootstrap/less/forms.less";
 @import "forms.less";
+@import "../rcorp-bootstrap/less/tables.less";
+@import "tables.less";
 
-@import "labels-badges.less";
+// Components: common
+@import "../rcorp-bootstrap/less/sprites.less";
+@import "../rcorp-bootstrap/less/dropdowns.less";
+@import "../rcorp-bootstrap/less/wells.less";
+@import "../rcorp-bootstrap/less/component-animations.less";
+@import "../rcorp-bootstrap/less/close.less";
 
+// Components: Buttons & Alerts
+@import "../rcorp-bootstrap/less/buttons.less";
+@import "buttons.less";
+@import "../rcorp-bootstrap/less/button-groups.less";
+@import "button-groups.less";
+@import "../rcorp-bootstrap/less/alerts.less";
 @import "alerts.less";
 
-@import "thumbnails.less";
-
+// Components: Nav
+@import "../rcorp-bootstrap/less/navs.less";
+@import "navs.less";
+@import "../rcorp-bootstrap/less/navbar.less";
+@import "navbar.less";
+@import "../rcorp-bootstrap/less/breadcrumbs.less";
 @import "breadcrumbs.less";
-
+@import "../rcorp-bootstrap/less/pagination.less";
 @import "pagination.less";
+@import "../rcorp-bootstrap/less/pager.less";
 
-@import "type.less";
-
-@import "hero-unit.less";
-
+// Components: Popovers
+@import "../rcorp-bootstrap/less/modals.less";
+@import "modals.less";
+@import "../rcorp-bootstrap/less/tooltip.less";
 @import "tooltip.less";
-
+@import "../rcorp-bootstrap/less/popovers.less";
 @import "popovers.less";
 
+//Components: Misc
+@import "../rcorp-bootstrap/less/thumbnails.less";
+@import "thumbnails.less";
+@import "../rcorp-bootstrap/less/media.less";
+@import "../rcorp-bootstrap/less/labels-badges.less";
+@import "labels-badges.less";
+@import "../rcorp-bootstrap/less/progress-bars.less";
+@import "../rcorp-bootstrap/less/accordion.less";
+@import "../rcorp-bootstrap/less/carousel.less";
 @import "carousel.less";
+@import "../rcorp-bootstrap/less/hero-unit.less";
+@import "hero-unit.less";
 
-@import "dropdowns.less";
+// Utility classes
+@import "../rcorp-bootstrap/less/utilities.less"; // Has to be last to override when necessary
 
-@import "tables.less";
+
+
+
+
+
 
